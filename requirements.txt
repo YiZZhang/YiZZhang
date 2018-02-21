@@ -1,0 +1,5 @@
+gunicorn
+Flask
+requests
+tensorflow
+opencv-contrib-python==3.3.0.9
