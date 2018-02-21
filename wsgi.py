@@ -1,6 +1,6 @@
 from flask import Flask,request
 import requests,threading
-from darkflow.net.build import TFNet
+#from darkflow.net.build import TFNet
 application = Flask(__name__)
 
 replyToken=0
