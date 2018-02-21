@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 import os
 import json
-from ...cython_utils.cy_yolo_findboxes import yolo_box_constructor
+#from ...cython_utils.cy_yolo_findboxes import yolo_box_constructor
 
 def _fix(obj, dims, scale, offs):
 	for i in range(1, 5):
@@ -38,6 +38,8 @@ def process_box(self, b, h, w, threshold):
 	return None
 
 def findboxes(self, net_out):
+	pass
+	"""
 	meta, FLAGS = self.meta, self.FLAGS
 	threshold = FLAGS.threshold
 	
@@ -45,6 +47,7 @@ def findboxes(self, net_out):
 	boxes = yolo_box_constructor(meta, net_out, threshold)
 	
 	return boxes
+	"""
 
 def preprocess(self, im, allobj = None):
 	"""
